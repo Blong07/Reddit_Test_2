@@ -5,7 +5,7 @@
 //  Created by Alexander Blong on 29/04/2025.
 //
 
-import SwiftUI
+/*import SwiftUI
 
 @main
 struct Reddit_Test_2App: App {
@@ -15,3 +15,4 @@ struct Reddit_Test_2App: App {
         }
     }
 }
+*/
