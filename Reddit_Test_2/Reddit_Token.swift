@@ -7,7 +7,7 @@
 
 // (Optional) RedditAPI.swift
 
-import Foundation
+import Foundation // Swift library to assist with data storage 
 
 struct RedditToken: Codable {
     let access_token: String
@@ -19,3 +19,4 @@ struct RedditUser: Codable {
     let name: String
     // add other fields as needed
 }
+

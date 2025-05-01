@@ -1,0 +1,10 @@
+//
+//  AppConfig.xcconfig
+//  Reddit_Test_2
+//
+//  Created by Alexander Blong on 01/05/2025.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+INTENT_DEFINITION_FILE = Reddit_Widget/Intents.intentdefinition

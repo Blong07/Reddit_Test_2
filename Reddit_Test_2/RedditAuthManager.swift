@@ -81,13 +81,13 @@ class RedditAuthManager: NSObject, ObservableObject {
             
             UserDefaults.standard.set(token, forKey: "access_token")
             DispatchQueue.main.async {
-                self.isAuthenticated = true
+                self.isAuthenticated = true //checks whether the access token is authenticated/true
                 self.fetchUsername(using: token)
             }
         }.resume()
     }
     
-    private func fetchUsername(using token: String) {
+    private func fetchUsername(using token: String) { // fetches username after authentication
         var req = URLRequest(url: URL(string: "https://oauth.reddit.com/api/v1/me")!)
         req.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         
@@ -110,3 +110,4 @@ extension RedditAuthManager: ASWebAuthenticationPresentationContextProviding {
         UIApplication.shared.windows.first { $0.isKeyWindow }!
     }
 }
+
